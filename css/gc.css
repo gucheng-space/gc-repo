@@ -1,0 +1,238 @@
+:root {
+  /* ========== 色彩系统 ========== */
+
+  /* 主色调 - 怀旧暖色 */
+  --color-primary-50: #fef6ee;
+  --color-primary-100: #fde8d3;
+  --color-primary-200: #fbcda5;
+  --color-primary-300: #f8ab6d;
+  --color-primary-400: #f57d33;
+  --color-primary-500: #f25c19;
+  --color-primary-600: #e3420e;
+  --color-primary-700: #bc2f0e;
+  --color-primary-800: #952714;
+  --color-primary-900: #792213;
+
+  /* 辅助色 - 复古蓝绿（好奇心） */
+  --color-secondary-50: #f0f9f4;
+  --color-secondary-100: #dcf1e3;
+  --color-secondary-200: #bae3cc;
+  --color-secondary-300: #8bcdad;
+  --color-secondary-400: #58b089;
+  --color-secondary-500: #36946e;
+  --color-secondary-600: #267658;
+  --color-secondary-700: #1f5e48;
+  --color-secondary-800: #1b4b3a;
+  --color-secondary-900: #173e31;
+
+  /* 强调色 - 梦幻紫（未来期待） */
+  --color-accent-50: #faf5ff;
+  --color-accent-100: #f3e8ff;
+  --color-accent-200: #e9d5ff;
+  --color-accent-300: #d8b4fe;
+  --color-accent-400: #c084fc;
+  --color-accent-500: #a855f7;
+  --color-accent-600: #9333ea;
+  --color-accent-700: #7e22ce;
+  --color-accent-800: #6b21a8;
+  --color-accent-900: #581c87;
+
+  /* 中性色 - 泛黄纸张感 */
+  --color-neutral-50: #fafaf8;
+  --color-neutral-100: #f5f5f0;
+  --color-neutral-200: #e8e7df;
+  --color-neutral-300: #d4d2c4;
+  --color-neutral-400: #b5b2a0;
+  --color-neutral-500: #95917d;
+  --color-neutral-600: #736f5e;
+  --color-neutral-700: #5a564a;
+  --color-neutral-800: #3d3a32;
+  --color-neutral-900: #2a2823;
+
+  /* 语义色 */
+  --color-success: #36946e;
+  --color-warning: #f57d33;
+  --color-error: #e3420e;
+  --color-info: #9333ea;
+
+  /* ========== 排版系统 ========== */
+
+  /* 字体家族 */
+  --font-serif: "Noto Serif SC", "Source Han Serif SC", "STSong", serif;
+  --font-sans: "Noto Sans SC", "PingFang SC", "Microsoft YaHei", sans-serif;
+  --font-mono: "JetBrains Mono", "Fira Code", "Consolas", monospace;
+  --font-display: "ZCOOL XiaoWei", cursive; /* 展示用，带手写感 */
+
+  /* 字体大小 - 流畅缩放 */
+  --text-xs: 0.75rem; /* 12px */
+  --text-sm: 0.875rem; /* 14px */
+  --text-base: 1rem; /* 16px */
+  --text-lg: 1.125rem; /* 18px */
+  --text-xl: 1.25rem; /* 20px */
+  --text-2xl: 1.5rem; /* 24px */
+  --text-3xl: 1.875rem; /* 30px */
+  --text-4xl: 2.25rem; /* 36px */
+  --text-5xl: 3rem; /* 48px */
+  --text-6xl: 3.75rem; /* 60px */
+
+  /* 行高 */
+  --leading-tight: 1.25;
+  --leading-snug: 1.375;
+  --leading-normal: 1.5;
+  --leading-relaxed: 1.625;
+  --leading-loose: 2;
+
+  /* 字重 */
+  --font-light: 300;
+  --font-normal: 400;
+  --font-medium: 500;
+  --font-semibold: 600;
+  --font-bold: 700;
+
+  /* ========== 间距系统 ========== */
+  --space-1: 0.25rem; /* 4px */
+  --space-2: 0.5rem; /* 8px */
+  --space-3: 0.75rem; /* 12px */
+  --space-4: 1rem; /* 16px */
+  --space-5: 1.25rem; /* 20px */
+  --space-6: 1.5rem; /* 24px */
+  --space-8: 2rem; /* 32px */
+  --space-10: 2.5rem; /* 40px */
+  --space-12: 3rem; /* 48px */
+  --space-16: 4rem; /* 64px */
+  --space-20: 5rem; /* 80px */
+  --space-24: 6rem; /* 96px */
+
+  /* ========== 圆角系统 ========== */
+  --radius-sm: 0.125rem; /* 2px - 细微圆角 */
+  --radius-base: 0.25rem; /* 4px - 基础圆角 */
+  --radius-md: 0.375rem; /* 6px - 中等圆角 */
+  --radius-lg: 0.5rem; /* 8px - 大圆角 */
+  --radius-xl: 0.75rem; /* 12px - 超大圆角 */
+  --radius-2xl: 1rem; /* 16px - 卡片圆角 */
+  --radius-full: 9999px; /* 完全圆形 */
+
+  /* ========== 阴影系统 ========== */
+  --shadow-sm: 0 1px 2px 0 rgba(42, 40, 35, 0.05);
+  --shadow-base: 0 1px 3px 0 rgba(42, 40, 35, 0.1),
+    0 1px 2px -1px rgba(42, 40, 35, 0.1);
+  --shadow-md: 0 4px 6px -1px rgba(42, 40, 35, 0.1),
+    0 2px 4px -2px rgba(42, 40, 35, 0.1);
+  --shadow-lg: 0 10px 15px -3px rgba(42, 40, 35, 0.1),
+    0 4px 6px -4px rgba(42, 40, 35, 0.1);
+  --shadow-xl: 0 20px 25px -5px rgba(42, 40, 35, 0.1),
+    0 8px 10px -6px rgba(42, 40, 35, 0.1);
+  --shadow-inner: inset 0 2px 4px 0 rgba(42, 40, 35, 0.05);
+
+  /* 特殊效果 - 纸张感 */
+  --shadow-paper: 0 2px 8px rgba(149, 145, 125, 0.15),
+    0 1px 3px rgba(149, 145, 125, 0.1);
+  --shadow-vintage: 2px 2px 0 rgba(242, 92, 25, 0.1),
+    4px 4px 0 rgba(54, 148, 110, 0.08);
+
+  /* ========== 动画系统 ========== */
+
+  /* 持续时间 */
+  --duration-fast: 150ms;
+  --duration-base: 250ms;
+  --duration-slow: 350ms;
+  --duration-slower: 500ms;
+
+  /* 缓动函数 */
+  --ease-in: cubic-bezier(0.4, 0, 1, 1);
+  --ease-out: cubic-bezier(0, 0, 0.2, 1);
+  --ease-in-out: cubic-bezier(0.4, 0, 0.2, 1);
+  --ease-bounce: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  --ease-smooth: cubic-bezier(0.45, 0.05, 0.55, 0.95);
+
+  /* ========== 布局系统 ========== */
+
+  /* 容器宽度 */
+  --container-xs: 20rem; /* 320px */
+  --container-sm: 24rem; /* 384px */
+  --container-md: 28rem; /* 448px */
+  --container-lg: 32rem; /* 512px */
+  --container-xl: 36rem; /* 576px */
+  --container-2xl: 42rem; /* 672px */
+  --container-3xl: 48rem; /* 768px */
+  --container-4xl: 56rem; /* 896px */
+  --container-5xl: 64rem; /* 1024px */
+  --container-6xl: 72rem; /* 1152px */
+  --container-7xl: 80rem; /* 1280px */
+
+  /* 文章阅读宽度 */
+  --prose-width: 65ch; /* 舒适阅读宽度 */
+
+  /* ========== 特殊效果 ========== */
+
+  /* 背景纹理 */
+  --bg-texture-paper: url('data:image/svg+xml,%3Csvg width="100" height="100" xmlns="http://www.w3.org/2000/svg"%3E%3Cfilter id="noise"%3E%3CfeTurbulence baseFrequency="0.9" numOctaves="4"/%3E%3CfeColorMatrix values="0 0 0 0 0.96 0 0 0 0 0.95 0 0 0 0 0.91 0 0 0 0.02 0"/%3E%3C/filter%3E%3Crect width="100%25" height="100%25" filter="url(%23noise)"/%3E%3C/svg%3E');
+
+  /* 模糊效果 */
+  --blur-sm: 4px;
+  --blur-base: 8px;
+  --blur-lg: 16px;
+  --blur-xl: 24px;
+
+  /* Z-index 层级 */
+  --z-base: 0;
+  --z-dropdown: 1000;
+  --z-sticky: 1020;
+  --z-fixed: 1030;
+  --z-modal-backdrop: 1040;
+  --z-modal: 1050;
+  --z-popover: 1060;
+  --z-tooltip: 1070;
+
+  /* ========== 主题应用示例 ========== */
+
+  /* 主背景 - 泛黄纸张 */
+  --bg-primary: var(--color-neutral-50);
+  --bg-secondary: var(--color-neutral-100);
+  --bg-elevated: var(--color-neutral-50);
+
+  /* 文字颜色 */
+  --text-primary: var(--color-neutral-900);
+  --text-secondary: var(--color-neutral-700);
+  --text-tertiary: var(--color-neutral-500);
+  --text-inverse: var(--color-neutral-50);
+
+  /* 边框 */
+  --border-light: var(--color-neutral-200);
+  --border-base: var(--color-neutral-300);
+  --border-strong: var(--color-neutral-400);
+
+  /* 链接颜色 */
+  --link-default: var(--color-secondary-600);
+  --link-hover: var(--color-secondary-700);
+  --link-visited: var(--color-accent-600);
+
+  /* 代码块 */
+  --code-bg: var(--color-neutral-100);
+  --code-text: var(--color-neutral-800);
+  --code-border: var(--color-neutral-300);
+}
+
+/* ========== 暗色模式 ========== */
+@media (prefers-color-scheme: dark) {
+  :root {
+    /* 调整为深色怀旧感 */
+    --bg-primary: #1a1916;
+    --bg-secondary: #252218;
+    --bg-elevated: #2a2823;
+
+    --text-primary: var(--color-neutral-100);
+    --text-secondary: var(--color-neutral-300);
+    --text-tertiary: var(--color-neutral-500);
+
+    --border-light: var(--color-neutral-800);
+    --border-base: var(--color-neutral-700);
+    --border-strong: var(--color-neutral-600);
+
+    --link-default: var(--color-secondary-400);
+    --link-hover: var(--color-secondary-300);
+    --link-visited: var(--color-accent-400);
+
+    --shadow-paper: 0 2px 8px rgba(0, 0, 0, 0.3), 0 1px 3px rgba(0, 0, 0, 0.2);
+  }
+}
