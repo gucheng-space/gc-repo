@@ -1,3 +1,74 @@
+📁 项目结构
+your-blog/
+├── assets/
+│ └── css/
+│ └── main.css # 全局样式和 CSS 变量
+├── components/
+│ └── ArticleCard.vue # 文章卡片组件
+├── content/
+│ └── blog/
+│ └── example-post.md # Markdown 文章
+├── pages/
+│ ├── index.vue # 首页
+│ ├── blog/
+│ │ ├── index.vue # 文章列表页
+│ │ └── [...slug].vue # 文章详情页
+├── uno.config.ts # UnoCSS 配置
+└── nuxt.config.ts # Nuxt 配置
+🎨 UnoCSS 类名使用示例
+vue<!-- 卡片样式 -->
+
+<div class="card-base p-6">基础卡片</div>
+<div class="card-elevated p-8">悬浮卡片</div>
+<div class="card-vintage p-6">复古卡片</div>
+
+<!-- 按钮样式 -->
+
+<button class="btn-primary">主要按钮</button>
+<button class="btn-secondary">次要按钮</button>
+<button class="btn-ghost">幽灵按钮</button>
+
+<!-- 文字颜色 -->
+<p class="text-primary">主要文字</p>
+<p class="text-secondary">次要文字</p>
+<p class="text-tertiary">第三级文字</p>
+
+<!-- 容器 -->
+<div class="container-article">文章容器（最大 65ch）</div>
+<div class="container-page">页面容器（最大 7xl）</div>
+
+<!-- 颜色使用 -->
+<div class="bg-primary-500 text-white">主色背景</div>
+<div class="bg-secondary-100 text-secondary-800">辅助色</div>
+<div class="text-accent-600">强调色文字</div>
+✨ 特色功能
+
+自动暗色模式：使用 dark: 前缀
+
+vue <div class="bg-neutral-50 dark:bg-neutral-950">
+自动适配暗色模式
+
+   </div>
+
+纸张纹理背景：
+
+vue <div class="bg-texture-paper bg-neutral-100">
+带纹理的背景
+
+   </div>
+
+Prose 样式（自动美化 Markdown）：
+
+vue <ContentRenderer 
+     :value="article" 
+     class="prose prose-neutral dark:prose-invert max-w-none" 
+   />
+
+图标支持（使用 UnoCSS Icons）：
+
+bash pnpm add -D @iconify-json/carbon
+vue <span class="i-carbon-calendar w-5 h-5" />
+
 // nuxt.config.ts
 export default defineNuxtConfig({
 modules: [
